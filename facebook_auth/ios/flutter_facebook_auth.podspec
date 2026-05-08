@@ -13,13 +13,13 @@ Pod::Spec.new do |s|
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'meedu.app' => 'contacto@meedu.app' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'flutter_facebook_auth/Sources/flutter_facebook_auth/**/*'
   s.dependency 'Flutter'
 
 
   # s.dependency 'FBSDKCoreKit', '~> 15.1.0'
   s.dependency 'FBSDKLoginKit', '18.0.2'
-  s.platform = :ios, '11.0'
+  s.platform = :ios, '12.0'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
