@@ -21,7 +21,8 @@ let package = Package(
     .target(
       name: "flutter_facebook_auth",
       dependencies: [
-        .product(name: "FBSDKLoginKit", package: "facebook-ios-sdk")
+        .product(name: "FacebookLogin", package: "facebook-ios-sdk"),
+        .product(name: "FacebookCore", package: "facebook-ios-sdk")
       ]
     )
   ]
