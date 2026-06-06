@@ -22,9 +22,6 @@ let package = Package(
       name: "flutter_facebook_auth",
       dependencies: [
         .product(name: "FBSDKLoginKit", package: "facebook-ios-sdk")
-      ],
-      cSettings: [
-        .headerSearchPath("include/flutter_facebook_auth")
       ]
     )
   ]
